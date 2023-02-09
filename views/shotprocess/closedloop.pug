@@ -1,0 +1,10 @@
+include ../includes/layout
+block content 
+container(class="d-flex justify-content-center flex-nowrap bg-info")
+    ul(class="mx-auto list-group list-group-horizontal ")
+        li(class="list-group-item" )
+            a(href="./shotsteps" ) 11 Steps
+        li(class="list-group-item disabled" style="background-color:lightgray;"  ) 
+            a(href="./closedloop" style="text-decoration:none; color: black;") Closed Loop
+block content
+include partials/closedloop

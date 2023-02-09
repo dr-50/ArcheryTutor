@@ -28,7 +28,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.get('/tuning', tuningRouter);
-app.get('/shotprocess', shotProcessRouter);
+// app.get('/shotprocess', shotProcessRouter);
 app.get('/training', trainingRouter);
 
 

@@ -2,9 +2,20 @@ var express = require('express');
 var router = express.Router();
 
 /* GET tuning page. */
-router.get('/tuning', function(req, res, next) {
-    res.render('tuning', { title: 'ArcheryTutor' });
+router.get('/', function(req, res) {
+    res.render('tuning/tuning', { title: 'ArcheryTutor:Tuning' });
 });
 
+router.get('/bareshaft', function(req, res) {
+    res.render('tuning/bareshaft', { title: 'ArcheryTutor:Tuning' });
+});
+
+router.get('/torque', function(req, res) {
+    res.render('tuning/torque', { title: 'ArcheryTutor:Tuning' });
+});
+
+router.get('/group', function(req, res) {
+    res.render('tuning/group', { title: 'ArcheryTutor:Tuning' });
+});
 
 module.exports = router;

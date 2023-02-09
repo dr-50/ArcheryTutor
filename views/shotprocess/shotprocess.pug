@@ -1,0 +1,18 @@
+include ../includes/layout
+block content 
+container(class="d-flex justify-content-center flex-nowrap bg-info")
+    ul(class="mx-auto list-group list-group-horizontal ")
+        li(class="list-group-item")
+            a(href="/shotprocess/shotsteps") 11 Steps
+        li(class="list-group-item" ) 
+            a(href="/shotprocess/closedloop") Closed Loop
+block content
+
+    h3(class="mb-4 mx-4") Its All Mental...
+
+    .container
+        .row 
+            .col(class=col-md-4)
+                include partials/shotsteps
+            .col(class=col-md-4)
+                include partials/closedloop
