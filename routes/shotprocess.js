@@ -13,18 +13,19 @@ router.get('/', (req, res)=>{
 // });
 
 router.get('/shotsteps', (req, res)=>{
-  res.render('shotprocess/shotsteps', { title: 'ShotSteps'})
+  res.render('shotprocess/shotsteps', { title: 'ArcheryTutor:ShotProcess'})
   // res.send('Hello')
 })
 
-router.get('/closedloop', (req, res)=>{
-  res.render('shotprocess/closedloop', { title: 'Tuning'})
+
+router.get('/basicform', (req, res)=>{
+  res.render('shotprocess/basicform', { title: 'ArcheryTutor:ShotProcess'})
   // res.send('Hello')
 })
 
-// router.get('/tbd', (req, res)=>{
-//   res.render('shotprocess/tbd', { title: 'Tuning'})
-//   // res.send('Hello')
-// })
 
+router.get('/advancedform', (req, res)=>{
+  res.render('shotprocess/advancedform', { title: 'ArcheryTutor:ShotProcess'})
+  // res.send('Hello')
+})
 module.exports = router;

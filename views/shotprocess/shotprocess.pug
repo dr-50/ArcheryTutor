@@ -5,14 +5,15 @@ container(class="d-flex justify-content-center flex-nowrap bg-info")
         li(class="list-group-item")
             a(href="/shotprocess/shotsteps") 11 Steps
         li(class="list-group-item" ) 
-            a(href="/shotprocess/closedloop") Closed Loop
+            a(href="/shotprocess/basicform") Basic Form            
+        li(class="list-group-item" ) 
+            a(href="/shotprocess/advancedform") Advanced Form
 block content
-
-    h3(class="mb-4 mx-4") Its All Mental...
 
     .container
         .row 
             .col(class=col-md-4)
                 include partials/shotsteps
             .col(class=col-md-4)
-                include partials/closedloop
+                h6 Basic Stance
+                img(src="/images/stance.jpg")(style="max-width: 60%;")

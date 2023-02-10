@@ -1,0 +1,36 @@
+include ../includes/layout
+block content 
+container(class="d-flex justify-content-center flex-nowrap bg-info")
+    ul(class="mx-auto list-group list-group-horizontal ")
+        li(class="list-group-item" ) 
+            a(href="./shotsteps") 11 Steps
+        li(class="list-group-item" ) 
+            a(href="./basicform") Basic Form
+        li(class="list-group-item disabled" style="background-color:lightgray;")
+            a(href="./advancedform" style="text-decoration:none; color: black;") Advanced Form
+        
+block content
+h4 advanced form...
+
+.container 
+    p We have all had fliers. After confirming it isn't an arrow issue try one of the below.
+
+    p The below are based on a right handed shooter. For lefties it is the opposite.
+    .row 
+        .col(class="mb-4 mx-4")
+            h5 Right Fliers 
+            img(src="/images/flier-right-3-spot.png")(style="max-width: 30%;")
+        .col(class="mb4 mx-4")
+            h6 Reason:
+            p Fligher rights can be a result of uneven push pull pressure
+            h6 Fixes: 
+            p Focus on pushing more with your bow hand
+    .row 
+        .col(class="mb-4 mx-4")
+            h5 High Fliers 
+            img(src="/images/flier-high-3-spot.png")(style="max-width: 30%;")
+        .col(class="mb4 mx-4")
+            h6 Reason:
+            p High flighers can be a result of not pulling against the back wall
+            h6 Fixes: 
+            p Focus on pulling more with your release hand    
