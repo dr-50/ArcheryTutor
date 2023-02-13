@@ -6,6 +6,10 @@ router.get('/', function(req, res) {
     res.render('tuning/tuning', { title: 'ArcheryTutor:Tuning' });
 });
 
+router.get('/paper', function(req, res) {
+    res.render('tuning/paper', { title: 'ArcheryTutor: Tuning' })
+})
+
 router.get('/bareshaft', function(req, res) {
     res.render('tuning/bareshaft', { title: 'ArcheryTutor:Tuning' });
 });
