@@ -18,4 +18,7 @@ router.get('/group', function(req, res) {
     res.render('tuning/group', { title: 'ArcheryTutor:Tuning' });
 });
 
+router.get('/walkback', function(req, res) {
+    res.render('tuning/walkback', { title: 'ArcheryTutor:Tuning' });
+});
 module.exports = router;

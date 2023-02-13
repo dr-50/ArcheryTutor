@@ -1,20 +1,39 @@
+//- General navbar 
 include includes/layout
 
 block content
-  h4(style="margin-left:10px;") Welcome to #{title}
+  //- Greeting
+  h4(style="margin-left:10px; margin-top:30px;") Welcome to #{title}
 
-  .container
-    .row 
-      .col(class=col-md-4)
-        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt qui asperiores quisquam, quod in id placeat reiciendis expedita, fuga dolorum sapiente debitis, nihil corporis labore nisi non enim incidunt? Iure!
-      .col(class=col-md-4)
-        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatem repellat nam vero consectetur explicabo quasi modi. Quae sint accusantium, assumenda ipsa voluptatum illum veritatis esse voluptates temporibus distinctio porro?
-    .row 
-      .col(class=col-md-4)
-        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt qui asperiores quisquam, quod in id placeat reiciendis expedita, fuga dolorum sapiente debitis, nihil corporis labore nisi non enim incidunt? Iure!
-      .col(class=col-md-4)
-        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatem repellat nam vero consectetur explicabo quasi modi. Quae sint accusantium, assumenda ipsa voluptatum illum veritatis esse voluptates temporibus distinctio porro?
+  //- Cards for beginner/advanced nav links
+  .container(style="margin-top:30px;")
+    p Archery Tutor is here to assist with the basics of bow setup to the more intricate nuances of shot form and everything in between.
+    .row(class="col-md-8 offset-md-2")
+      .col(class="col-md-4")
+        .card(class="h-100")
+          .col(class="card-top" style="margin-top: 5px; margin-left:10px;")
+            h5 The Basics 
+          .col(class="card-body") 
+            ul 
+              li 
+                a(href="setup/setup") Bow Setup
+              li 
+                a(href="shotprocess/shotsteps") 11 Steps for Shooting
+              li 
+                a(href="training/training") Training 
+      .col(class="col-md-4")
+        .card(class="h-100")
+          .col(class="card-top" style="margin-top: 5px; margin-left:10px;")
+            h5 Advanced Topics 
+          .col(class="card-body") 
+            ul 
+              li 
+                a(href="tuning/tuning") Tuning
+              li 
+                a(href="shotprocess/advancedform") Advanced Form
 
+
+//- Footer 
 <footer class="text-center fixed-bottom text-lg-start bg-light text-muted">
   <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom">
     <div class="me-5 d-none d-lg-block">

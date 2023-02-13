@@ -2,8 +2,8 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    link(rel='stylesheet', href='/stylesheets/style.css')
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   body
     <nav class="navbar sticky-top navbar-dark bg-dark navbar-expand-lg">
@@ -40,21 +40,7 @@ html
                 <li><a class="dropdown-item fs-7" href="../tuning/bareshaft">Bareshaft Tuning</a></li>
                 <li><a class="dropdown-item fs-7" href="../tuning/torque">Torque Tuning</a></li>
                 <li><a class="dropdown-item fs-7" href="../tuning/group">Group Tuning</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item fs-7" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-5" href="/training">Training Plans</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item fs-7" href="../training/indoor">Indoor Spot Plans</a></li>
-                <li><a class="dropdown-item fs-7" href="../training/outdoor">Outdoor Spot Plans</a></li>
-                <li><a class="dropdown-item fs-7" href="../training/3d">3D Plans</a></li>
+                <li><a class="dropdown-item fs-7" href="../tuning/walkback">Walk Back Tuning</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item fs-7" href="#">Something else here</a></li>
               </ul>
@@ -74,7 +60,22 @@ html
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item fs-7" href="#">Something else here</a></li>
               </ul>
-            </li>               
+            </li>           
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="/training">Training Plans</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item fs-7" href="../training/indoor">Indoor Spot Plans</a></li>
+                <li><a class="dropdown-item fs-7" href="../training/outdoor">Outdoor Spot Plans</a></li>
+                <li><a class="dropdown-item fs-7" href="../training/3d">3D Plans</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item fs-7" href="#">Something else here</a></li>
+              </ul>
+            </li>    
             <li class="nav-item">
               <a class="nav-link fs-5" href="../resources">Resources</a>
             </li>
